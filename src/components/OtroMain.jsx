@@ -1,19 +1,18 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import Constants from 'expo-constants';
+import { View } from "react-native";
+import { Route, Routes } from "react-router-native";
+import AppBar from "./AppBar";
 import Repositories from "./Repositories";
+import SignIn from "./SignIn";
 
 const OtroMain = () => {
-  const styless = StyleSheet.create({
-    container: {
-      marginTop: Constants.statusBarHeight,
-      width: "100%",
-      padding: 10
-    }
-  })
   return (
-    <View style={styless.container}>
-      <Repositories />
+    <View style={{ flex: 1 }}>
+      <AppBar />
+      <Routes>
+        <Route path="/" element={<Repositories />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
     </View>
   );
 };

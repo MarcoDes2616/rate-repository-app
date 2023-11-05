@@ -66,5 +66,16 @@ export default [
         ratingAverage: 100,
         reviewCount: 2,
         ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/139426?v=4",
+    },
+    {
+        id: "emberjs.ember.js",
+        fullName: "emberjs/ember.js",
+        description: "Ember.js - A JavaScript framework for creating ambitious web applications",
+        lenguage: "JavaScript",
+        forksCount: 5337,
+        stargazersCount: 21939,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars0.githubusercontent.com/u/1253363?v=4",
     }
 ]

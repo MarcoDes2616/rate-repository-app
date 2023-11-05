@@ -1,37 +1,57 @@
-import { View } from "react-native-web";
+import { Image, View } from "react-native-web";
 import StyledText from "./StyledText";
 import RepositoryStats from "./RepositoryStats";
 import theme from "../theme";
 import { StyleSheet } from "react-native";
 
-
+const RepositoryHeader = (props) => {
+  return (
+    <View style={{ flexDirection: "row" }}>
+      <View style={{ paddingRight: 10 }}>
+        <Image style={styles.image} source={{ uri: props.ownerAvatarUrl }} />
+      </View>
+      <View style={{ flexShrink: 1 }}>
+        <StyledText fontWeight="bold" testID="fullName">
+          {props.fullName}
+        </StyledText>
+        <StyledText color="secondary" testID="description">
+          {props.description}
+        </StyledText>
+        <StyledText style={styles.lenguage} testID="language">
+          {props.lenguage}
+        </StyledText>
+      </View>
+    </View>
+  );
+};
 
 const RepositoryItems = (props) => {
   return (
     <View key={props.id} style={styles.container}>
-      <StyledText fontWeight="bold" fontSize="subheading">
-        {props.fullName}
-      </StyledText>
-      <StyledText >{props.description}</StyledText>
-      <StyledText color={"white"} style={styles.lenguage}>{props.lenguage}</StyledText>
+      <RepositoryHeader {...props} />
       <RepositoryStats {...props} />
     </View>
   );
 };
 
-
 const styles = StyleSheet.create({
-    container: {
-        padding: 20,
-        paddingBottom: 5,
-        paddingTop: 5,
-        },
-    lenguage: {
-        padding: 4,
-        borderRadius: 5,
-        backgroundColor: theme.colors.primary,
-        alignSelf: "flex-start",
-        },
-    })
+  container: {
+    padding: 20,
+    paddingVertical: 5,
+  },
+  lenguage: {
+    padding: 4,
+    borderRadius: 4,
+    backgroundColor: theme.colors.primary,
+    color: theme.colors.white,
+    marginVertical: 4,
+    alignSelf: "flex-start",
+  },
+  image: {
+    width: 50,
+    height: 50,
+    borderRadius: 4,
+  },
+});
 
 export default RepositoryItems;

@@ -34,13 +34,13 @@ const StyledText = ({children, color, fontSize, fontWeight, align, style, ...res
 
     const textStyles = [
         styles.text,
-        style,
         color === 'primary' && styles.colorPrimary,
         color === 'secondary' && styles.colorSecondary,
         fontWeight === 'bold' && styles.bold,
         fontSize === 'subheading' && styles.subheading,
         align === 'center' && {textAlign: 'center'},
-        color === 'white' && {color: 'white'},
+        // color === 'white' && {color: 'white'},
+        style,
     ]
 
 
