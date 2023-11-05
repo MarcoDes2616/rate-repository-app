@@ -1,17 +1,15 @@
 import React from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, FlatList } from "react-native";
 import repositories from "../data/repositories.js";
-import StyledText from "./StyledText.jsx";
+import RepositoryItems from "./RepositoryItems.jsx";
 
 const Repositories = (props) => {
   return (
     <FlatList
       data={repositories}
+      ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
       renderItem={({ item: repo }) => (
-        <View key={props.id}>
-          <StyledText bold>{repo.id}</StyledText>
-          <StyledText primary>{repo.fullName}</StyledText>
-        </View>
+       <RepositoryItems {...repo} />
       )}
     ></FlatList>
   );

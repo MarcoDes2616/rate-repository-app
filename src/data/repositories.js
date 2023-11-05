@@ -2,115 +2,69 @@
 
 export default [
     {
-        id: 1,
-        fullName: "Marco Cardenas"
+        id: "jaredpalmer.formik",
+        fullName: "jaredpalmer/formik",
+        description: "Build forms in React, without the tears",
+        lenguage: "JavaScript",
+        forksCount: 1619,
+        stargazersCount: 21856,
+        ratingAverage: 88,
+        reviewCount: 3,
+        ownerAvatarUrl: "https://avatars2.githubusercontent.com/u/4060187?v=4",
     },
     {
-        id: 2,
-        fullName: "Leandro Alberto"
+        id: "rail.rails",
+        fullName: "rail/rails",
+        description: "Ruby on Rails",
+        lenguage: "Ruby",
+        forksCount: 18349,
+        stargazersCount: 45377,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars1.githubusercontent.com/u/4223?v=4",
     },
     {
-        id: 3,
-        fullName: "Marco Cardenas"
+        id: "midudev.midu.dev",
+        fullName: "midudev/midu.dev",
+        description: "Blog de desarrollo web y tutoriales de programación",
+        lenguage: "html",
+        forksCount: 9,
+        stargazersCount: 8,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars0.githubusercontent.com/u/14969441?v=4",
     },
     {
-        id: 4,
-        fullName: "Leandro Alberto"
+        id: "facebook.react",
+        fullName: "facebook/react",
+        description: "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+        lenguage: "JavaScript",
+        forksCount: 24756,
+        stargazersCount: 148303,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/69631?v=4",
     },
     {
-        id: 5,
-        fullName: "Marco Cardenas"
+        id: "vuejs.vue",
+        fullName: "vuejs/vue",
+        description: "Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+        lenguage: "JavaScript",
+        forksCount: 26084,
+        stargazersCount: 166662,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars0.githubusercontent.com/u/6128107?v=4",
     },
     {
-        id: 6,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 7,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 8,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 9,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 10,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 11,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 12,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 13,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 14,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 15,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 16,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 17,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 18,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 19,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 20,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 21,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 22,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 23,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 24,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 25,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 26,
-        fullName: "Leandro Alberto"
-    },
-    {
-        id: 27,
-        fullName: "Marco Cardenas"
-    },
-    {
-        id: 28,
-        fullName: "Leandro Alberto"
+        id: "angular.angular",
+        fullName: "angular/angular",
+        description: "One framework. Mobile & desktop.",
+        lenguage: "TypeScript",
+        forksCount: 31613,
+        stargazersCount: 160998,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: "https://avatars3.githubusercontent.com/u/139426?v=4",
     }
 ]

@@ -1,11 +1,18 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import Constants from 'expo-constants';
 import Repositories from "./Repositories";
 
 const OtroMain = () => {
+  const styless = StyleSheet.create({
+    container: {
+      marginTop: Constants.statusBarHeight,
+      width: "100%",
+      padding: 10
+    }
+  })
   return (
-    <View style={{marginTop: Constants.statusBarHeight}}>
+    <View style={styless.container}>
       <Repositories />
     </View>
   );
