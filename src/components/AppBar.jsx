@@ -2,14 +2,14 @@ import React from "react";
 import {
   ScrollView,
   StyleSheet,
-  TouchableWithoutFeedback,
   View,
-} from "react-native-web";
+} from "react-native";
 import StyledText from "./StyledText";
 import Constants from "expo-constants";
 import theme from "../theme";
 import { Link, useLocation } from "react-router-native";
 import { Pressable } from "react-native";
+import AppBarTab from "./AppBarTab";
 
 const style = StyleSheet.create({
   container: {
@@ -31,16 +31,6 @@ const style = StyleSheet.create({
     paddingBottom: 15,
   },
 });
-const AppBarTab = ({ children, to }) => {
-  const { pathname } = useLocation();
-  const styles = [pathname == to ? style.text : style.textInactive];
-
-  return (
-    <Link to={to} component={Pressable}>
-      <StyledText style={styles}>{children}</StyledText>
-    </Link>
-  );
-};
 
 const AppBar = () => {
   return (

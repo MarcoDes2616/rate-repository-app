@@ -1,4 +1,4 @@
-import { Image, View } from "react-native-web";
+import { Image, View } from "react-native";
 import StyledText from "./StyledText";
 import RepositoryStats from "./RepositoryStats";
 import theme from "../theme";
