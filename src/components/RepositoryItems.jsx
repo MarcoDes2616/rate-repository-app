@@ -1,4 +1,4 @@
-import { Image, View } from "react-native";
+import { Image, View, Platform } from "react-native";
 import StyledText from "./StyledText";
 import RepositoryStats from "./RepositoryStats";
 import theme from "../theme";
@@ -42,7 +42,11 @@ const styles = StyleSheet.create({
   lenguage: {
     padding: 4,
     borderRadius: 4,
-    backgroundColor: theme.colors.primary,
+    backgroundColor: Platform.select({
+      android: theme.colors.primary,
+      ios: theme.colors.secondary,
+      default: "salmon",
+    }),
     color: theme.colors.white,
     marginVertical: 4,
     alignSelf: "flex-start",
