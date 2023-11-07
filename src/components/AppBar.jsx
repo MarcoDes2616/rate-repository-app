@@ -4,11 +4,8 @@ import {
   StyleSheet,
   View,
 } from "react-native";
-import StyledText from "./StyledText";
 import Constants from "expo-constants";
 import theme from "../theme";
-import { Link, useLocation } from "react-router-native";
-import { Pressable } from "react-native";
 import AppBarTab from "./AppBarTab";
 
 const style = StyleSheet.create({

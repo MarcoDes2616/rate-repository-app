@@ -2,8 +2,11 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Link, useLocation } from 'react-router-native';
 import StyledText from './StyledText';
+import theme from '../theme';
+import { Pressable } from "react-native";
+import Constants from "expo-constants";
 
-const AppBarTab = () => {
+const AppBarTab = ({children, to}) => {
     const style = StyleSheet.create({
         container: {
           backgroundColor: theme.appBar.primary,
